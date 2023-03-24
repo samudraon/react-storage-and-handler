@@ -9,7 +9,7 @@ const Cosmetics = () => {
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setCosmetics(data))
     }, [])
     return (
         <div>
